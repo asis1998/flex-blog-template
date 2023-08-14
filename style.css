@@ -1,0 +1,149 @@
+ body{
+  margin: 0;
+ }
+
+ *{
+  box-sizing: border-box;
+ }
+ 
+ .container{
+  width: 80%;
+  margin:auto;
+ }
+
+ /* hero section  */
+
+ .hero{
+  height: 80vh;
+  position: relative;
+  
+ }
+ .hero video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
+
+ .hero>div{
+  position: absolute;
+  background: rgba(202, 195, 195, 0.232);
+  left: 10vw;
+  top: 30vh;
+  width: 450px;
+  padding: 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+ }
+
+
+ /* nav section  */
+
+ nav{
+  background: black;
+  color: white;
+  position: sticky;
+  top: 0;
+  list-style-type: none;
+ }
+ nav>div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+ }
+
+ nav ul{
+  display: flex;
+gap: 1rem;
+list-style: none;
+padding: 0.5rem 0 ;
+ }
+
+ nav ul li{
+  cursor: pointer;
+  
+ }
+
+ nav ul li:hover{
+  color:orangered;
+  /* font-size: 2rem; */
+  transform: scale(1.3);
+  transition: transform 2s;
+  
+ }
+
+ /* paragraph */
+ section.container{
+  padding: 3rem 0;
+ }
+
+ /* images */
+ /* .img1, .img2, .img3{ */
+  [class^="img"]{
+  background: red;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+ .img1{
+  background: red url(./assets/beach-1751455_1280.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+ }
+ .img2{
+  background: red url(./assets/mountains-8136054_1280.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+ }
+ .img3{
+  background: red url(./assets/sunrise-1014712_1280.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+ }
+ .title{
+  background: rgba(0, 0, 0, 0.291);
+  color: white;
+  font-size: 2rem;
+  padding:1.4rem 5rem;
+  border-radius: 10px;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+ }
+
+ /* footer  */
+ footer{
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  }
+
+ .down {
+  position: absolute;
+  rotate: 90deg;
+  color: white;
+  animation: sign 1s infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@keyframes sign {
+
+  0%{
+    top: 70vh;
+    left: 50%;
+  }
+
+  100%{
+    top: 80vh;
+    left: 50%;
+  }
+  
+}
+
+
+
+ 
